@@ -1,0 +1,24 @@
+#text {
+    text-align: center;
+}
+
+.section-bar {
+    background-color: aquamarine;
+}
+
+.section-name {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 2px;
+}
+
+.container {
+    display: flex;
+}
+
+.cell {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    /* flex: 1; */
+}

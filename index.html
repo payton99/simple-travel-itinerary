@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="./js/main.js" defer></script>
+        <link rel="stylesheet" href="./style.css" type="text/css">
+    </head>
+
+    <body>
+        <input type="text" name="inputbox" id="add-travel" placeholder="Add destination" size="50"/>
+        <button id="btn">Add</button><br>
+
+        <div id="detination-title">
+            <h1 id="text">New Destination</h1>
+        </div>
+        <div class="section-bar" id="depart-flight">
+            <h3 class="section-name">Departing Flight</h3>
+        </div>
+
+        <div class="container" id="depart-flight-body">
+            <div class="cell">
+                <label for="trip-start">Date</label>
+                <input type="date" name="trip-start" id="trip-start-date" />
+            </div>
+            <div class="cell">
+                <label for="depart-time">Depart Time</label>
+                <input type="time" name="depart-time" />
+            </div>
+            <div class="cell">
+                <label for="depart-city">City</label>
+                <input type="text" name="depart-city" />
+            </div>
+            <div class="cell">
+                <label for="depart-airport">Airport</label>
+                <input type="text" name="depart-airport" size="10" />
+            </div>
+            <div class="cell">
+                <label for="airline">Airline</label>
+                <input type="text" name="airline" />
+            </div>
+            <div class="cell">
+                <label for="arrival-time">Arrival Time</label>
+                <input type="time" name="arrival-time" id="destination-arrival-time" />
+            </div>
+        </div>
+
+        <div class="section-bar" id="return-flight">
+            <h3 class="section-name">Return Flight</h3>
+        </div>
+
+        <div class="container" id="return-flight-body">    
+            <div class="cell">
+                <label for="trip-end">Date</label>
+                <input type="date" name="trip-end" id="trip-end-date" />
+            </div>
+            <div class="cell">
+                <label for="depart-time">Depart Time</label>
+                <input type="time" name="depart-time" />
+            </div>
+            <div class="cell">
+                <label for="depart-city">City</label>
+                <input type="text" name="depart-city" />
+            </div>
+            <div class="cell">
+                <label for="depart-airport">Airport</label>
+                <input type="text" name="depart-airport" size="10" />
+            </div>
+            <div class="cell">
+                <label for="airline">Airline</label>
+                <input type="text" name="airline" />
+            </div>
+            <div class="cell">
+                <label for="arrival-time">Arrival Time</label>
+                <input type="time" name="arrival-time" id="return-arrival-time" />
+            </div>
+        </div>
+
+        <div class="section-bar" id="activities">
+            <h3 class="section-name">Activities</h3>
+        </div>
+
+        <div id="activities-body">
+            <button id="add-input">Add Activity</button><br />
+            <input type="text" id="inputWrap-0" />
+        </div>
+    </body>
+</html>
