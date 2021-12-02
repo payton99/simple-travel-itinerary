@@ -1,5 +1,8 @@
+// Get the 'Add' button
 const button = document.getElementById('btn');
 
+// On the click of the button, whatever text was entered into
+// the input field will replace 'New Destination' as the header.
 function updateText() {
     let inputValue = document.getElementById('add-travel').value;
     document.getElementById('text').innerHTML = inputValue;
@@ -7,13 +10,16 @@ function updateText() {
 
 button.addEventListener('click', updateText);
 
-
+// Quick little caluclation to see how many days and hours you will
+// be at your destination.
 const date1 = document.getElementById('trip-start-date');
 const date2 = document.getElementById('trip-end-date');
 
 const time1 = document.getElementById('destination-arrival-time');
 const time2 = document.getElementById('return-arrival-time');
 
+// Appending the time value to the corresponding date with a space
+// in between to make it easier working with Date()
 let dateTime1 = '';
 dateTime1 += date1.value;
 dateTime1 += ' ' + time1.value;
@@ -25,8 +31,7 @@ dateTime2 += ' ' + time2.value;
 let startDate = new Date(dateTime1);
 let endDate = new Date(dateTime2);
 
-// let timeDiff = endDate.getTime() - startDate.getTime();
-// let dayDiff = timeDiff / (1000 * 3600 * 24);
+
 let diffSeconds = Math.abs(endDate - startDate) / 1000;
 const days = Math.floor(diffSeconds / 86400);
 diffSeconds -= days * 86400
